@@ -43,6 +43,9 @@ button:hover {
     flex-direction: column;
     row-gap: 10px;
     margin-top: 10px;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
 }
 
 .mini-btn {
@@ -58,4 +61,16 @@ button:hover {
 
 .active {
     background: whitesmoke;
+}
+
+@media (width < 700px) {
+    .container {
+        width: 100vh;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
 }
